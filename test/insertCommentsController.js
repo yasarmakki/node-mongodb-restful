@@ -6,7 +6,6 @@ chai.should();
 var mongoDb = require('mongodb').MongoClient;
 
 
-process.env.CONN_STRING = 'mongodb://localhost:27017/';
 let app = require('../app');
 let repo = require('./../src/repository/repository');
 
