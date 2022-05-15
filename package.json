@@ -1,7 +1,7 @@
 {
   "name": "my-test-1",
   "version": "1.0.0",
-  "description": "Assessment ",
+  "description": "Node js, docker and kubernetes example ",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
