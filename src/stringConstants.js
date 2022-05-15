@@ -1,0 +1,20 @@
+module.exports = Object.freeze({
+    Comments_Collection: 'Comments',
+    Members_Collection: 'Members',
+    Archived_Collecetion: 'Archived',
+    No_Comments:"There does not exist any comments for the organization : ",
+    Comments_Del : "Comments were successfully deleted.",
+    Comments_No_Del: "Comments were not deleted. Error occurred.",
+    Comments_Fetch_Success: "Comments successfully fetched.",
+    Comments_Not_Found: "There were no comments found for the organization :",
+    Members_Fetch_success: "Members successfully fetched",
+    Members_Not_Found: "There were no members found for the organization : ", 
+    Empty_Comment: "Please provide a comment.",
+    Comments_Saved_Success: "Comment successfully saved.",
+    Comments_Saved_Fail: "Comment could not be saved. \n",
+    Invalid_Request: "Invalid input.",
+    Invalid_Login: "Please provide valid login detail.",
+    Invalid_AvatarUrl: "Please provide valid avatar URL.",
+    Member_Saved_Success:  "Member successfully saved.",
+    Member_Saved_Fail: "Member could not be saved."
+});
