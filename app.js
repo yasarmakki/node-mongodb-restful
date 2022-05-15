@@ -3,7 +3,6 @@
  */
 
 let express = require('express');
-const sls = require('serverless-http')
 require('dotenv').config(); // To load all the environment variables from the .env file
 const log = require('log-to-file'); //logging the status
 
