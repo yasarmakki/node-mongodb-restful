@@ -28,7 +28,12 @@ res.send("Connected to the server"));
 
 app.use('/orgs',routes);
 
-
+app.use(
+    '/api-docs',
+    swaggerUi.serve, 
+    swaggerUi.setup(swaggerDocument)
+  );
+  
 module.exports = app.listen(port, function () {
     log("Server is running ");
     console.log("Running server on port " + port);
