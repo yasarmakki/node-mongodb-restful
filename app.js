@@ -3,6 +3,7 @@
  */
 
 let express = require('express');
+
 require('dotenv').config(); // To load all the environment variables from the .env file
 const log = require('log-to-file'); //logging the status
 
@@ -38,4 +39,4 @@ module.exports = app.listen(port, function () {
     console.log("Running server on port " + port);
 });
 
-module.exports.server = sls(app)
+
