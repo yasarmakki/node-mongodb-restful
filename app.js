@@ -8,8 +8,8 @@ require('dotenv').config(); // To load all the environment variables from the .e
 const log = require('log-to-file'); //logging the status
 
 
-router.use('/api-docs', swaggerUi.serve);
-router.get('/api-docs', swaggerUi.setup(swaggerDocument));
+const swaggerUi = require('swagger-ui-express'),
+swaggerDocument = require('./swagger.json');
 
 let app = express();
 let routes = require("./src/routes");

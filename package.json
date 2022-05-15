@@ -19,6 +19,7 @@
     "mocha": "^6.2.2",
     "mongodb": "^3.4.1",
     "mongoose": "^5.8.4",
-    "serverless-http": "^2.3.0"
+    "serverless-http": "^2.3.0",
+    "swagger-ui-express": "^4.4.0"
   }
 }
