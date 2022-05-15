@@ -1,5 +1,5 @@
 {
-  "name": "assessment",
+  "name": "my-test-1",
   "version": "1.0.0",
   "description": "Assessment ",
   "main": "app.js",
@@ -7,7 +7,7 @@
     "start": "nodemon app.js",
     "test": "mocha --timeout 10000"
   },
-  "author": "",
+  "author": "Yasar",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
