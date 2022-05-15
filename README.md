@@ -1,6 +1,40 @@
 # node-mongodb-restful
 This is CRUD nodejs app with mongodb
 
+Quick Install
+Once you've downloaded the application and installed all the prerequisites, you're just a few steps away from running the application.
+
+The repository comes pre-bundled with a package.json file that contains the list of modules you need to start your application.
+
+To install the dependencies, run this in the application folder from the command-line:
+
+$ npm install
+Running Your Application
+$ npm start
+Testing Your Application
+$ npm test
+Testing the endpoints
+There are 2 endpoints deployed once the application is running :
+
+/orgs/{orgName}/comments
+/orgs/{orgName}/members
+The "comments" endpoint accepts POST,GET and DELETE requests. POST request accepts json object as
+
+{comment : "SOME COMMENT"}
+against the database to store the comment in MongoDB collection. GET request returns all the comments from the database. DELETE request soft deletes all the comments from the "Comments" collection and saves all of them to "ARCHIVE" collection.
+
+The "members" endpoint accepts POST and GET requests. POST request accepts json object as
+
+{
+	"login":"login detail",
+	"avatarUrl":"avatar url",
+	"followers":30,
+	"following":25
+}
+against the database to store the member data in MongoDB collection. GET request returns all the members from the database in descending order by the number of the followers the member has.
+
+Logs
+Logs can be found in a file called "default.log" in the app directory.
 
 Creating a web server
 You first need to create a container image. We will use Docker for that. We are creating a simple web server to see how Kubernetes works.
